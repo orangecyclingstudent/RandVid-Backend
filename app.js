@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const {google} = require('googleapis');
 const API_KEY = process.env.API_KEY;
 const cors = require('cors');
-const corsOptions = {origin: ['http://localhost:3000', 'https://orangecyclingstudent.github.io/RandomVideoGenerator/']};
+const corsOptions = {origin: ['http://localhost:3000', 'https://orangecyclingstudent.github.io/RandomVideoGenerator/', 'https://orangecyclingstudent.github.io/RandomVideoGenerator']};
 app.use(cors(corsOptions));
 
 const youtube = google.youtube({
