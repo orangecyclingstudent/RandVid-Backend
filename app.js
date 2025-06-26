@@ -40,6 +40,7 @@ async function youtubeSearchVideo(channelId, mood){
         const response = await youtube.search.list({
             channelId: channelId,
             q: mood,
+            videoDuration: 'medium',
             order: 'relevance',
             part: 'snippet,id',
             type: 'video',
